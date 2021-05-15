@@ -1,0 +1,514 @@
+h1,
+h2,
+h3,
+h4,
+p,
+label,
+span {
+    filter: drop-shadow(0px 1px 0px #fff);
+}
+
+/* BODY */
+body {
+    font-family: "Arial";
+    background: #e4e4e4;
+}
+/*  */
+
+/* WRAPPER */
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 37px 0 18px;
+}
+/*  */
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 6px;
+    margin-bottom: 23px;
+    border-bottom: 13px solid #a12424;
+}
+
+.logo h1,
+.logo p {
+    line-height: 14px;
+    font-weight: bold;
+    color: #a12424;
+    cursor: pointer;
+}
+
+.logo h1 {
+    font-size: 30px;
+}
+
+.logo span:first-child {
+    color: #000;
+}
+
+.logo span:last-child {
+    font-size: 18px;
+    color: #a3a3a3;
+}
+
+.logo p {
+    font-size: 12px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 58.5%;
+}
+
+.nav__link {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 14px;
+    text-decoration: none;
+    color: #000;
+    transition: color .5s;
+}
+
+.nav__link:hover {
+    color: #a12424;
+    transition: .5s;
+}
+
+.nav__link.active {
+    color: #a12424;
+}
+/*  */
+
+/* MAIN */
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+/*  */
+
+/* PARAGRAPH */
+.paragraph {
+    padding-bottom: 24px;
+}
+
+.paragraph h2 {
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 18px;
+}
+
+.paragraph p {
+    width: 733px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #4b4b4b;
+}
+
+.paragraph strong {
+    font-weight: bold;
+}
+
+.paragraph a {
+    text-decoration: underline;
+    color: #a12424;
+}
+
+.paragraph a:hover {
+    text-decoration: none;
+}
+/*  */
+
+/* GALLERY */
+.gallery {
+    width: 698px;
+}
+
+.gallery h3,
+.gallery .gallery__text {
+    font-weight: bold;
+}
+
+.gallery h3 {
+    margin-bottom: 11px;
+    font-size: 16px;
+}
+
+.gallery .gallery__block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery .gallery__text {
+    border: 10px solid #cfcfcf;
+    width: 220px;
+    padding: 72.5px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #ffffff;
+    color: #cfcfcf;
+}
+/*  */
+
+/* LISTS */
+.list {
+    padding: 30px 0 28px;
+}
+
+.list h3 {
+    margin-bottom: 13px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.list__block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list__items:nth-child(1) .navlist {
+    padding-left: 10px;
+    list-style: disc;
+}
+
+.list__items:nth-child(2) .navlist {
+    list-style: decimal;
+}
+
+.list__items {
+    width: 33%;
+}
+
+.list__items h4 {
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.list__items .navlist__item {
+    font-size: 13px;
+    line-height: 20px;
+    list-style-position: inside;
+    color: #4b4b4b;
+}
+
+.list__items:nth-child(1) .navlist__item::marker {
+    font-size: 15px;
+}
+
+.list__items:nth-child(3) .navlist__item:nth-child(odd) {
+    font-weight: bold;
+}
+
+.list__items:nth-child(3) .navlist__item:nth-child(even) {
+    font-style: italic;
+}
+/*  */
+
+/* TABLEBLOCK */
+.tableBlock h3 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #010101;
+}
+
+.table {
+    font-size: 13px;
+    background-color: #ffffff;
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    border: 1px solid #bcbcbc;
+}
+
+.table th:nth-child(1) {
+    width: 140px;
+}
+
+.table th:nth-child(2) {
+    width: 270px;
+}
+
+.table th:nth-child(3) {
+    width: 320px;
+}
+
+.table th {
+    font-weight: bold;
+    text-align: left;
+    background: #ececec;
+}
+
+.table td {
+    color: #4b4b4b;
+}
+/*  */
+
+/* FORMBLOCK */
+.formBlock {
+    padding: 27px 0 49px;
+}
+
+.formBlock h3 {
+    margin-bottom: 21px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.formBlock p {
+    margin-bottom: 15px;
+}
+
+.formBlock p:nth-child(3) {
+    margin-bottom: 5px;
+}
+
+.formBlock label[for="text"],
+.formBlock .dropdown-container span,
+.formBlock label[for="textarea"] {
+    display: block;
+    font-size: 12px;
+    line-height: 20px;
+    color: #010101;
+}
+
+.formBlock label[for="checkbox"],
+.formBlock label[for="radio"] {
+    font-size: 13px;
+    line-height: 20px;
+    color: #000000;
+    user-select: none;
+}
+
+.formBlock input[type="checkbox"],
+.formBlock input[type="radio"] {
+    display: none;
+}
+
+.formBlock .fake-checkbox,
+.formBlock .fake-radio {
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    padding: 5px 0;
+    border: 1px solid #000;
+}
+
+.formBlock .fake-checkbox::before,
+.formBlock .fake-radio::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    padding: 4px 0;
+    background: #000;
+    opacity: 0;
+    transition: .3s;
+}
+
+.formBlock .fake-radio,
+.formBlock .fake-radio::before {
+    border-radius: 50%;
+}
+
+.formBlock input[type="checkbox"]:checked+.fake-checkbox::before,
+.formBlock input[type="radio"]:checked+.fake-radio::before {
+    opacity: 1;
+}
+
+.formBlock input[type="text"],
+.formBlock select[name="select1"] {
+    width: 225px;
+    padding: 6px;
+    outline: none;
+}
+
+.formBlock select[name="select1"] {
+    width: 100%;
+    appearance: none;
+    cursor: pointer;
+    transition: color .3s ease, background-color .3s ease;
+}
+
+.formBlock select[name="select1"]:hover,
+.formBlock select[name="select1"]:focus {
+    background: #cfcfcf;
+}
+
+.formBlock select[name="select1"] option {
+    background: #fff;
+}
+
+.formBlock .dropdown-container {
+    position: relative;
+    width: 225px;
+    margin-bottom: 15px;
+}
+
+.formBlock .select-icon {
+    position: absolute;
+    top: 55%;
+    right: 6px;
+    width: 18.5px;
+    text-align: center;
+    background: #faf8f8;
+    border-radius: 4px;
+    box-shadow: 0px 0px 0px 1.5px rgba(0, 0, 0, .8);
+    transition: background-color .3s ease, border-color .3s ease;
+}
+
+.formBlock select:hover~.select-icon,
+.formBlock select:focus~.select-icon {
+    background-color: #fff;
+    border-color: #DCDCDC;
+}
+
+.formBlock .fas {
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.formBlock select:hover~.select-icon .fas,
+.formBlock select:focus~.select-icon .fas {
+    color: #a12424;
+    transform: rotate(-180deg);
+    transition: transform .5s .3s;
+}
+
+.formBlock textarea{
+    resize: none;
+    outline: none;
+}
+
+.formBlock button[type="submit"] {
+    width: 91px;
+    padding: 8.5px 0;
+    font-size: 14px;
+    font-weight: bold;
+    background-image: linear-gradient(0deg, #a12323 0%, #b92c2c 100%);
+    color: #fff;
+    border: 1px solid #a12424;
+    cursor: pointer;
+}
+/*  */
+
+/* FOOTER */
+.footer {
+    font-size: 13px;
+    line-height: 20px;
+    color: #4b4b4b;
+}
+
+.footer a {
+    color: #b60000;
+}
+
+.footer a:hover {
+    text-decoration: none;
+}
+/*  */
+
+/* SIDEBAR */
+.sidebar {
+    width: 220px;
+}
+
+.sidebar details {
+    padding: 10px;
+    font-size: 13px;
+    background: #ececec;
+    border: 1px solid #bcbcbc;
+    border-bottom: 0;
+    user-select: none;
+}
+
+.sidebar details:last-of-type {
+    border-bottom: 1px solid #bcbcbc;
+}
+
+.sidebar summary {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidebar details[open] summary {
+    color: #a12424;
+    transition: 1s;
+}
+
+.sidebar details[open] summary::before {
+    transform: rotate(0deg);
+}
+
+.sidebar summary::marker {
+    font-size: 0;
+}
+
+.sidebar summary::before {
+    content: "";
+    width: 12px;
+    padding: 3px 0;
+    margin-right: 10px;
+    background-image: url("../img/arrow.png");
+    transform: rotate(-90deg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: all linear .3s;
+}
+
+.sidebar details p {
+    padding-top: 10px;
+}
+
+.side__article {
+    margin-top: 23px;
+    background: #ececec;
+    border: 1px solid #a12424;
+}
+
+.side__article h4 {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    background: #a12424;
+    color: #fff;
+}
+
+.side__article p {
+    padding: 10px;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 20px;
+}
+
+.side__article a {
+    display: block;
+    padding: 0 15px 20px;
+    font-size: 13px;
+    text-align: end;
+    color: #b60000;
+}
+
+.side__article a:hover {
+    text-decoration: none;
+}
+
+.side__article a::after {
+    content: "\00BB";
+}
+/*  */
