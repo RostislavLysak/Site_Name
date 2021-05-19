@@ -28,16 +28,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 6px;
     margin-bottom: 23px;
+    padding-bottom: 6px;
     border-bottom: 13px solid #a12424;
 }
 
 .logo h1,
 .logo p {
-    line-height: 14px;
-    font-weight: bold;
-    color: #a12424;
     cursor: pointer;
 }
 
@@ -66,19 +63,22 @@ body {
 
 .nav__link {
     font-size: 14px;
-    font-weight: bold;
-    line-height: 14px;
     text-decoration: none;
     color: #000;
     transition: color .5s;
 }
 
-.nav__link:hover {
-    color: #a12424;
-    transition: .5s;
+.logo h1,
+.logo p,
+.nav__link {
+    font-weight: bold;
+    line-height: 14px;
 }
 
-.nav__link.active {
+.nav__link:hover,
+.nav__link.active,
+.logo h1,
+.logo p  {
     color: #a12424;
 }
 /*  */
@@ -91,34 +91,37 @@ body {
 /*  */
 
 /* PARAGRAPH */
-.paragraph {
+.information {
     padding-bottom: 24px;
 }
 
-.paragraph h2 {
+.information h2 {
     margin-bottom: 12px;
     font-size: 18px;
-    font-weight: bold;
-    line-height: 18px;
 }
 
-.paragraph p {
+.information p {
     width: 733px;
     font-size: 12px;
-    line-height: 18px;
     color: #4b4b4b;
 }
 
-.paragraph strong {
+.information h2,
+.information p {
+    line-height: 18px;
+}
+
+.information h2,
+.information strong {
     font-weight: bold;
 }
 
-.paragraph a {
+.information a {
     text-decoration: underline;
     color: #a12424;
 }
 
-.paragraph a:hover {
+.information a:hover {
     text-decoration: none;
 }
 /*  */
@@ -144,14 +147,14 @@ body {
 }
 
 .gallery .gallery__text {
-    border: 10px solid #cfcfcf;
     width: 220px;
     padding: 72.5px 0;
     font-size: 18px;
     text-transform: uppercase;
     text-align: center;
-    background-color: #ffffff;
+    background-color: #fff;
     color: #cfcfcf;
+    border: 10px solid #cfcfcf;
 }
 /*  */
 
@@ -164,12 +167,15 @@ body {
     margin-bottom: 13px;
     font-size: 16px;
     font-weight: bold;
-    line-height: 20px;
 }
 
 .list__block {
     display: flex;
     justify-content: space-between;
+}
+
+.list__items {
+    width: 33%;
 }
 
 .list__items:nth-child(1) .navlist {
@@ -181,28 +187,28 @@ body {
     list-style: decimal;
 }
 
-.list__items {
-    width: 33%;
-}
-
 .list__items h4 {
     margin-bottom: 16px;
     font-size: 14px;
-    font-weight: bold;
 }
 
 .list__items .navlist__item {
     font-size: 13px;
-    line-height: 20px;
     list-style-position: inside;
     color: #4b4b4b;
+}
+
+.list__items .navlist__item,
+.list h3 {
+    line-height: 20px;
 }
 
 .list__items:nth-child(1) .navlist__item::marker {
     font-size: 15px;
 }
 
-.list__items:nth-child(3) .navlist__item:nth-child(odd) {
+.list__items:nth-child(3) .navlist__item:nth-child(odd),
+.list__items h4 {
     font-weight: bold;
 }
 
@@ -215,13 +221,17 @@ body {
 .tableBlock h3 {
     margin-bottom: 15px;
     font-size: 16px;
-    font-weight: bold;
     color: #010101;
+}
+
+.tableBlock h3,
+.table th {
+    font-weight: bold;
 }
 
 .table {
     font-size: 13px;
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 .table th,
@@ -243,7 +253,6 @@ body {
 }
 
 .table th {
-    font-weight: bold;
     text-align: left;
     background: #ececec;
 }
@@ -261,8 +270,8 @@ body {
 .formBlock h3 {
     margin-bottom: 21px;
     font-size: 16px;
-    line-height: 20px;
     font-weight: bold;
+    line-height: 20px;
 }
 
 .formBlock p {
@@ -286,7 +295,7 @@ body {
 .formBlock label[for="radio"] {
     font-size: 13px;
     line-height: 20px;
-    color: #000000;
+    color: #000;
     user-select: none;
 }
 
@@ -312,9 +321,9 @@ body {
     left: 50%;
     display: block;
     transform: translate(-50%, -50%);
-    width: 8px;
-    padding: 4px 0;
-    background: #000;
+    width: 7px;
+    padding: 3.5px 0;
+    background: #3c3c3e;
     opacity: 0;
     transition: .3s;
 }
@@ -330,25 +339,23 @@ body {
 }
 
 .formBlock input[type="text"],
-.formBlock select[name="select1"] {
+.formBlock select[name="select"] {
     width: 225px;
     padding: 6px;
-    outline: none;
 }
 
-.formBlock select[name="select1"] {
+.formBlock select[name="select"] {
     width: 100%;
     appearance: none;
-    cursor: pointer;
     transition: color .3s ease, background-color .3s ease;
 }
 
-.formBlock select[name="select1"]:hover,
-.formBlock select[name="select1"]:focus {
+.formBlock select[name="select"]:hover,
+.formBlock select[name="select"]:focus {
     background: #cfcfcf;
 }
 
-.formBlock select[name="select1"] option {
+.formBlock select[name="select"] option {
     background: #fff;
 }
 
@@ -378,7 +385,6 @@ body {
 
 .formBlock .fas {
     font-size: 12px;
-    cursor: pointer;
 }
 
 .formBlock select:hover~.select-icon .fas,
@@ -388,8 +394,13 @@ body {
     transition: transform .5s .3s;
 }
 
-.formBlock textarea{
+.formBlock textarea {
     resize: none;
+}
+
+.formBlock textarea,
+.formBlock input[type="text"],
+.formBlock select[name="select"] {
     outline: none;
 }
 
@@ -401,6 +412,11 @@ body {
     background-image: linear-gradient(0deg, #a12323 0%, #b92c2c 100%);
     color: #fff;
     border: 1px solid #a12424;
+}
+
+.formBlock select[name="select"],
+.formBlock .fas,
+.formBlock button[type="submit"] {
     cursor: pointer;
 }
 /*  */
@@ -429,7 +445,6 @@ body {
 .sidebar details {
     padding: 10px;
     font-size: 13px;
-    background: #ececec;
     border: 1px solid #bcbcbc;
     border-bottom: 0;
     user-select: none;
@@ -461,13 +476,13 @@ body {
 .sidebar summary::before {
     content: "";
     width: 12px;
-    padding: 3px 0;
     margin-right: 10px;
+    padding: 3px 0;
     background-image: url("../img/arrow.png");
-    transform: rotate(-90deg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    transform: rotate(-90deg);
     transition: all linear .3s;
 }
 
@@ -477,8 +492,12 @@ body {
 
 .side__article {
     margin-top: 23px;
-    background: #ececec;
     border: 1px solid #a12424;
+}
+
+.side__article,
+.sidebar details {
+    background: #ececec;
 }
 
 .side__article h4 {
