@@ -149,8 +149,6 @@ body {
 .gallery .gallery__img {
     position: relative;
     font-size: 18px;
-    text-transform: uppercase;
-    text-align: center;
     border: 10px solid #cfcfcf;
 }
 
