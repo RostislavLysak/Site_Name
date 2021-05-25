@@ -132,7 +132,7 @@ body {
 }
 
 .gallery h3,
-.gallery .gallery__text {
+.gallery .gallery__img {
     font-weight: bold;
 }
 
@@ -146,15 +146,26 @@ body {
     justify-content: space-between;
 }
 
-.gallery .gallery__text {
-    width: 220px;
-    padding: 72.5px 0;
+.gallery .gallery__img {
+    position: relative;
     font-size: 18px;
     text-transform: uppercase;
     text-align: center;
-    background-color: #fff;
-    color: #cfcfcf;
     border: 10px solid #cfcfcf;
+}
+
+.gallery .gallery__img img {
+    display: block;
+    width: 200px;
+}
+
+.gallery .gallery__img::before {
+    content: "IMAGE";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #cfcfcf;
+    transform: translate(-50%, -50%);
 }
 /*  */
 
@@ -340,6 +351,7 @@ body {
     border-radius: 4px;
     box-shadow: 0px 0px 0px 1.5px rgba(0, 0, 0, .8);
     transition: background-color .3s ease, border-color .3s ease;
+    pointer-events: none;
 }
 
 .formBlock select:hover~.select-icon,
